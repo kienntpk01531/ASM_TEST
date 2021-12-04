@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div class="list">
+        <input type="text" name="" id="nhap" placeholder="nhập dữ liệu">
+        <button onclick="nhap()">Nhập</button>
+        <ul id="list_all"></ul>
+    </div>
+    <script>
+        function nhap(){
+            var dulieu = document.getElementById("nhap").value;
+            var list_new = document.createElement("li");
+            var list_text = document.createTextNode("du");
+            var list_all = document.getElementById("list_all");
+            list_new.appendChild(list_text);
+            list_all.appendChild(list_new);
+        }
+    </script>
+</body>
+<div class="bau_cua">
+     <div class="row">
+         <div class="item">Hươu</div>
+         <div class="item">Bầu</div>
+         <div class="item">Cá</div>
+     </div>
+     <div class="row">
+        <div class="item">Gà</div>
+        <div class="item">Cua</div>
+        <div class="item">tôm</div>
+    </div>
+</div>
+
+    <script type="text/javascript" src="./lab5.js"></script>
+    <link rel="stylesheet" href="lab5.css">
+</html>
